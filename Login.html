@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>log-in</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="LoginController">
+	<table>
+		<tr>
+			<td>
+				<label for="username">Username</label>
+				<input type="text" ng-model="username" id="username">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="password">Password</label>
+				<input type="password" ng-model="password" id="password">
+				{{username}}
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="submit" value="Submit" ng-click="submitLoginForm()">
+				<label for="">not registered please Sign-in</label>
+			</td>
+		</tr>
+	</table>
+</body>
+<script type="text/javascript" src="js/loginController.js"></script>
+
+</html>

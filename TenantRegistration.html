@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tenant Registration Form</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="registerTenantController">
+	<h1><u>Tenant Registration Form</u></h1>
+	<table>
+	<tr>
+		<td><h5>First Name : </h5></td>
+		<td><input type="text" ng-model="fname"> </td>
+		<td>          </td>
+		<td><h5>Last Name :</h5></td>
+		<td><input type="text" ng-model="lname"> </td>
+	</tr>
+	
+	<tr>
+		<td><h5>Email Id : </td>
+		<td><input type="email" ng-model="email"></td><br>
+		<td>          </td>
+		<td><h5>Mobile No : </td>
+		<td><input type="phone" ng-model="mobile"></td>
+	</tr>
+
+	<tr>
+		<td><h5>Permanent Address : </td>
+		<td><input type="text" ng-model="address"></td>
+		<td>          </td>
+		<td><h5>Adhaar Number : </td>
+		<td><input type="text" ng-model="adhaar"></td>
+	</tr>
+	
+	<tr>
+		<td><h5>Rent Amount : </td>
+		<td><input type="text" ng-model="rent"></td><br>
+		<td>          </td>
+		<td><h5>Occupency Date : </td>
+		<td><input type="date" ng-model="date"></td><br>
+	</tr>
+		<tr>
+		<td><h5>Last Meter Reading : </td>
+		<td><input type="text" ng-model="reading"></td><br>
+		
+	</tr>
+	
+	<tr>
+		<td><h5>Room No : </td>
+		<td><Select ng-model="room" id="room">
+		<option value="">...........</option>
+		<option value="Room No.1">Room No.1</option>
+		<option value="Room No.2">Room No.2</option>
+		<option value="Room No.3">Room No.3</option>
+		<option value="Room No.4" >Room No.4</option>
+		<option value="Room No.5">Room No.5</option>
+		<option value="Room No.6">Room No.6</option>
+		<td>          </td>
+		</Select></td>
+		<td><h5>Building : </td>
+		<td><Select ng-model="building">
+		<option></option>
+		<option value="452/13,Rani Bazar,Sharifpura,Amritsar">452/13,Rani Bazar,Sharifpura,Amritsar</option>
+		<option value="1559,Gali No.5,Gol Masjid,Sharifpura,Amritsar">1559,Gali No.5,Gol Masjid,Sharifpura,Amritsar</option>
+	
+		</Select></td>
+	</tr>
+	<br>
+	<tr>
+		<td><input type="submit" value="Submit" ng-click="tenantRegistrationForm()"></td>	
+		
+	</tr>
+	
+	
+	
+	
+	
+	
+		
+	</table>
+	
+	
+</body>
+<script type="text/javascript" src="js/TenantRegistrationController.js"></script>
+</html>
