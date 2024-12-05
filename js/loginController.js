@@ -13,7 +13,7 @@ app.controller('LoginController', function($scope,$http) {
 	  };
    $http({
     method : "POST",
-      url : "http://localhost:8080/Login",
+      url : " https://118a-2404-7c80-5c-f136-75b7-d8cf-9cfc-de0.ngrok-free.app/Login",
       data: request,
       headers:custom_headers
   }).then(function mySuccess(response) {
